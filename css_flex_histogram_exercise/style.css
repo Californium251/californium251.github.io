@@ -1,0 +1,181 @@
+:root {
+    --light: #fafafa;
+    --red: #e53935;
+    --green: #4caf50;
+    --blue: #2196f3;
+}
+  
+html {
+    color: #333;
+    font: 18px/1.5 sans-serif;
+  
+    background-color: var(--light);
+}
+  
+body {
+    margin: 0;
+    padding: 50px 0;
+}
+  
+h1 {
+    text-align: center;
+}
+  
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+  
+p {
+    margin: 0;
+    margin-top: 5px;
+}
+  
+/* BEGIN (write your solution here) */
+.histogram {
+    width: 100%;
+}
+
+.histogram-header-blue>div {
+    position: absolute;
+}
+
+.histogram-header-blue>div::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 9px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--blue);
+}
+
+.histogram-header-red>div {
+    position: absolute;
+}
+
+.histogram-header-red>div::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 9px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--red);
+}
+
+.histogram-header-green>div {
+    position: absolute;
+}
+
+.histogram-header-green>div::before {
+    content: "";
+    position: absolute;
+    left: -15px;
+    top: 9px;
+    width: 10px;
+    height: 10px;
+    background-color: var(--green);
+}
+
+.theader {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.tbody {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-between;
+}
+
+.histogram-row {
+    display: flex;
+    min-height: 402px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.histogram-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.histogram-name {
+    position: absolute;
+}
+
+.histogram-name>span {
+    position: absolute;
+    left: 70px;
+    width: 100px;
+    bottom: -10px;
+}
+
+span[value="40k"] {
+    min-height: 40%;
+}
+
+span[value="80k"] {
+    min-height: 80%;
+}
+
+span[value="75k"] {
+    min-height: 75%;
+}
+
+span[value="35k"] {
+    min-height: 35%;
+}
+
+span[value="63k"] {
+    min-height: 63%;
+}
+
+span[value="50k"] {
+    min-height: 50%;
+}
+
+
+span[value="90k"] {
+    min-height: 90%;
+}
+
+span[value="77k"] {
+    min-height: 77%;
+}
+
+span[value="80k"] {
+    min-height: 80%;
+}
+
+.histogram-blue {
+    background-color: var(--blue);
+}
+
+.histogram-red {
+    background-color: var(--red);
+}
+
+.histogram-green {
+    background-color: var(--green);
+}
+
+/* END */
+
+.w-50px {
+    width: 50px;
+}
+
+.mt-50px {
+    margin-top: 50px;
+}
+
+.px-20 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
